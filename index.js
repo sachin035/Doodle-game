@@ -46,7 +46,7 @@ function animate() {
   });
 
   timer++;
-  if (timer % 70 === 0) {
+  if (timer % 80 === 0) {
     generatePlatform();
 
     timer = 0;
@@ -57,15 +57,11 @@ function animate() {
   ctx.fillText("Score: " + totalDistance, 10, 30);
 
   if (player.y + player.height >= canvas.height) {
-    // Draw game over message
     ctx.fillStyle = "red";
     ctx.font = "40px Arial";
     ctx.fillText("Game Over", canvas.width / 2 - 100, canvas.height / 2);
 
-    // Draw "Press Start" button
-    // ctx.fillStyle = "bisque";
-    // ctx.fillRect(canvas.width / 2 - 80, canvas.height / 2 + 30, 160, 40);
-    ctx.fillStyle = "greem";
+    ctx.fillStyle = "red";
     ctx.font = "20px Arial";
     ctx.fillText(
       "Your Total Score is:" + totalDistance,
@@ -73,7 +69,6 @@ function animate() {
       canvas.height / 2 + 55
     );
 
-    // Optionally, you can reset the game on button click
     canvas.addEventListener("click");
   } else {
     requestAnimationFrame(animate);
