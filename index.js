@@ -37,7 +37,7 @@ function animate() {
   platformArray.forEach((platform) => {
     platform.make(ctx);
 
-    platform.Py += 3.5;
+    platform.Py += 4;
 
     if (collisionDetection(player, platform)) {
       player.y = platform.Py - player.height;
@@ -46,7 +46,7 @@ function animate() {
   });
 
   timer++;
-  if (timer % 75 === 0) {
+  if (timer % 50 === 0) {
     generatePlatform();
 
     timer = 0;
