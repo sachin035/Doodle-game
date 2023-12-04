@@ -1,0 +1,14 @@
+#canvas {
+  border: 1px solid black;
+  margin: 40px auto;
+  display: block;
+  background-color: wheat;
+}
+
+#startButton {
+  color: black;
+  background-color: bisque;
+  padding: 10px 10px;
+  margin: 40px auto;
+  display: block;
+}
