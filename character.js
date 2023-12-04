@@ -44,7 +44,6 @@ class Character {
       this.groundedOnPlatform = false;
     } else {
       this.vy += GRAVITY;
-
       this.y += this.vy;
 
       if (this.y + this.height >= canvas.height) {
