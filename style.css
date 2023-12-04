@@ -12,3 +12,9 @@
   margin: 40px auto;
   display: block;
 }
+
+#instructions {
+  text-align: center;
+  color: black;
+  margin-top: 10px;
+}

@@ -46,7 +46,7 @@ function animate() {
   });
 
   timer++;
-  if (timer % 80 === 0) {
+  if (timer % 75 === 0) {
     generatePlatform();
 
     timer = 0;
